@@ -17,7 +17,7 @@ jobs:
         with:
           host: ${{ vars.PROD_SERVER_HOST }}
           username: ${{ vars.PROD_SERVER_USER }}
-          key: ${{ vars.PROD_SERVER_SSH_KEY }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             set -e
             cd /var/www/production/p2pMedia
@@ -36,7 +36,7 @@ jobs:
             with:
               host: ${{ vars.PROD_SERVER_HOST }}
               username: ${{ vars.PROD_SERVER_USER }}
-              key: ${{ vars.PROD_SERVER_SSH_KEY }}
+              key: ${{ secrets.SERVER_SSH_KEY }}
               script: |
                 set -e
 
