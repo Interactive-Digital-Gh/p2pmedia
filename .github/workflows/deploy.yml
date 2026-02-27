@@ -41,7 +41,7 @@ jobs:
                 set -e
 
                 echo "Switching to staging directory"
-                cd /var/www/staging/p2pMedia
+                cd /var/www/staging/p2pmedia
 
                 echo "Pulling latest code"
                 git pull origin staging
